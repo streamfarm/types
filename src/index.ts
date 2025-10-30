@@ -5,6 +5,8 @@ export * from './PlatformType'
 export * from './PlatformTypeEnum'
 export * from './AccountType'
 export * from './AccountSocialNetworkEnum'
+export * from './AccountSocialNetworkType'
+export * from './RegionType'
 
 export * from './SocialNetworkTwitchResponseType'
 export * from './SocialNetworkGoodgameResponseType'
