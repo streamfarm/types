@@ -1,24 +1,16 @@
 {
   "compilerOptions": {
     "outDir": "dist",
-    "sourceMap": true,
-    "target": "esnext",
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": false,
     "module": "commonjs",
+    "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": true,
-    "strict": true,
     "skipLibCheck": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "resolveJsonModule": true,
-    "typeRoots": [
-      "./node_modules/@types"
-    ]
+    "target": "esnext",
+    "rootDir": "src"
   },
-  "include": [
-    "./*.js",
-    "src/**/*.ts",
-    "test/**/*.ts",
-  ],
+  "include": ["src/**/*.ts"]
 }

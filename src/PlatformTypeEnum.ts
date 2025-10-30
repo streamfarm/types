@@ -1,0 +1,16 @@
+export enum PlatformTypeEnum {
+  TELEGRAM = 'telegram',
+  VK = 'vk',
+  OK = 'ok',
+  RUTUBE = 'rutube',
+  YOUTUBE = 'youtube',
+  TWITCH = 'twitch',
+  TIKTOK = 'tiktok',
+  LIKEE = 'likee',
+  GOODGAME = 'goodgame',
+  CUSTOM_1 = 'custom_1',
+  CUSTOM_2 = 'custom_2',
+  CUSTOM_3 = 'custom_3',
+  CUSTOM_4 = 'custom_4',
+  CUSTOM_5 = 'custom_5',
+}
