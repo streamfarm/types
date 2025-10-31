@@ -1,3 +1,8 @@
+import { StreamCategoryEnum } from './StreamCategoryEnum';
+import { RegionEntityType } from './RegionEntityType';
+import { AccountEntityType } from './AccountEntityType';
+import { PlatformEntityType } from './PlatformEntityType';
+
 /**
  * Represents the configuration and metadata for a stream player.
  *
@@ -73,19 +78,54 @@ export type StreamPlayerType = {
  * @property {boolean} isTranscoded - Indicates whether the stream is being transcoded.
  * @property {number} clientCount - The total number of clients currently connected to the stream.
  * @property {string|null} [scenePreview] - A preview image or scene URL associated with the stream, if available.
- * @property {any} [region] - The associated region data. Use `RegionType` if defined.
- * @property {any} [account] - The account linked to the stream. Use `AccountType` or `AccountEntity` for detailed typing if available.
+ * @property {any} [region] - The associated region data. Use `RegionEntityType` if defined.
+ * @property {any} [account] - The account linked to the stream. Use `AccountEntityType` or `AccountEntity` for detailed typing if available.
  * @property {any[]} [platforms] - The platforms that the stream is broadcasted to. Use an array of `PlatformType` for deep typing.
  * @property {any} [statistic] - Overall statistical information related to the stream. Use `StatisticType` if available.
  * @property {any[]} [statisticMonthly] - An array of monthly statistical data for the stream. Use `StatisticMonthlyType[]` if defined.
  */
+export type StreamEntityType = {
+  uuid: string;
+  streamKey: string;
+  streamKeySecret: string;
+  streamName: string;
+  streamDescription: string;
+  streamCategory: StreamCategoryEnum;
+  enableComments: boolean;
+  madeForKids: boolean;
+  hasPaidPromotion: boolean;
+  createdAt: Date;
+  status: boolean;
+  active: boolean;
+  dateFirstActive: Date | null;
+  dateLastActive: Date | null;
+  streamData: string | null;
+  currentBitrate: number;
+  memoryBytes: number;
+  cpuUsage: number;
+  speed: number;
+  dropDup: string | null;
+  fps: number;
+  resolution: string | null;
+  useDvr: boolean;
+  isTranscoded: boolean;
+  clientCount: number;
+  scenePreview?: string | null;
+
+  region?: RegionEntityType | null;
+  account?: AccountEntityType | null;
+  platforms?: PlatformEntityType[];
+  statistic?: any;               // Use StatisticType if you want strict typing
+  statisticMonthly?: any[];      // Use StatisticMonthlyType[] if you want strict typing
+};
+/*
 export type StreamType = {
   uuid: string;
-  streamKey?: string;
-  streamKeySecret?: string;
-  streamName?: string;
+  streamKey: string;
+  streamKeySecret: string;
+  streamName: string;
   streamDescription?: string;
-  streamCategory?: string;
+  streamCategory: string;
   enableComments: boolean;
   createdAt: Date;
   status: boolean;
@@ -110,4 +150,4 @@ export type StreamType = {
   platforms?: any[];               // Use PlatformType[] if defined
   statistic?: any;                 // Use StatisticType if defined
   statisticMonthly?: any[];        // Use StatisticMonthlyType[] if defined
-};
+};*/

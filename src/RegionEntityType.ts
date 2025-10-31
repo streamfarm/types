@@ -1,4 +1,4 @@
-export type Region = {
+export type RegionEntityType = {
   uuid: string;
   regionName: string;
   regionShortKey: string;
