@@ -112,8 +112,8 @@ export type StreamEntityType = {
   clientCount: number;
   scenePreview?: string | null;
 
-  region?: RegionEntityType | null;
-  account?: AccountEntityType | null;
+  region: RegionEntityType;
+  account: AccountEntityType;
   platforms?: PlatformEntityType[];
   statistic?: any;               // Use StatisticType if you want strict typing
   statisticMonthly?: any[];      // Use StatisticMonthlyType[] if you want strict typing

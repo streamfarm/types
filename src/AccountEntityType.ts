@@ -1,4 +1,7 @@
 export type AccountEntityType = {
-  firstName: string,
-  lastName: string,
+  uuid: string;
+  firstName: string;
+  lastName: string;
+  createdAt: Date;
+  updatedAt: Date;
 };

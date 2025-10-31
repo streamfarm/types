@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "dist",
+    "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
     "emitDeclarationOnly": false,
@@ -10,7 +11,14 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "target": "esnext",
-    "rootDir": "src"
+    "rootDir": "src",
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
   },
-  "include": ["src/**/*.ts"]
+  "include": [
+    "./*.js",
+    "src/**/*.ts",
+    "test/**/*.ts",
+  ]
 }

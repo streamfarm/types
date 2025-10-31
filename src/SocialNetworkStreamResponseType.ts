@@ -1,4 +1,4 @@
-export type SocialPlatformStreamResponse = {
+export type SocialNetworkStreamResponseType = {
   broadcastId: string | null,
   streamId: string,
   ingestionAddress: string,

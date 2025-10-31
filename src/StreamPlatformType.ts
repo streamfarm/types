@@ -2,12 +2,11 @@
 
 
 import { PlatformTypeEnum } from './PlatformTypeEnum';
-import {StreamEntityType} from "./StreamEntityType";
-// import { StreamType } from './StreamType'; // If you want to type the relation
+import { StreamEntityType } from './StreamEntityType';
 
-export type PlatformType = {
+export type StreamPlatformType = {
   uuid: string;
-  platformType?: PlatformTypeEnum;
+  platformType: PlatformTypeEnum;
   platformStreamUrl: string;
   platformStreamKey: string;
   active: boolean;
