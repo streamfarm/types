@@ -1,4 +1,3 @@
-export * from './UserEntityType';
 export * from './StreamEntityType';
 export * from './StreamCategoryEnum';
 export * from './StreamPlatformType';
