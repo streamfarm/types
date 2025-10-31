@@ -1,3 +1,0 @@
-//gitlab.com/api/v4/projects/75700681/packages/npm/:_authToken=YOUR_GITLAB_TOKEN
-@streamfarm:registry=https://gitlab.com/api/v4/projects/75700681/packages/npm/
-always-auth=true

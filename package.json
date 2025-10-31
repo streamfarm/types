@@ -24,8 +24,5 @@
     "node": ">=20.0.0",
     "npm": ">=10.0.0"
   },
-  "private": false,
-  "publishConfig": {
-    "@scope:registry": "https://gitlab.com/api/v4/projects/75700681/packages/npm/"
-  }
+  "private": false
 }
